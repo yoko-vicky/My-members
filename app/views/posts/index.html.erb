@@ -1,0 +1,6 @@
+<h1>All the posts</h1>
+<% if @posts.any? %>
+  <%= render partial: "post", collection: @posts %>
+<% else %>
+<p>Not found</p>
+<% end %>
