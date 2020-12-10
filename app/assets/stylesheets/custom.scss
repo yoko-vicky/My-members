@@ -1,2 +1,18 @@
 // some code here
 @import "bootstrap/dist/css/bootstrap";
+
+.thumb {
+  width: 24px;
+  height: 24px;
+  margin: 0 6px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pic {
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  border-radius: 50%;
+  object-fit: cover;
+}

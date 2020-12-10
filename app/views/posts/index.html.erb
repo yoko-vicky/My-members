@@ -4,3 +4,7 @@
 <% else %>
 <p>Not found</p>
 <% end %>
+
+<% if user_signed_in? %>
+  <%= link_to  "Create a new post", new_post_path %>
+<% end %>

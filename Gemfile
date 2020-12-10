@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem "font-awesome-rails"
+gem 'gravatar_image_tag'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

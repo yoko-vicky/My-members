@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: %i[index]
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :require_same_user, only: %i[edit update destroy]
+
   def index
     @posts = Post.all
   end
@@ -46,5 +48,12 @@ class PostsController < ApplicationController
 
   def set_post
     @post = Post.find(params[:id])
+  end
+
+  def require_same_user
+    return if current_user == @post.user
+
+    flash[:alert] = 'You can edit or destroy only your own post.'
+    redirect_to @post
   end
 end

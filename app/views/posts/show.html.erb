@@ -1,4 +1,8 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.body %></p>
-<p>Posted by @<%= @post.user.username %></p>
+<p>Posted by <%= gravatar_image_tag(@post.user.email.gsub('spam', 'mdeering'), size: 15, alt: @post.user.username, class: "thumb" ) %> <%= link_to  @post.user.username, user_path(@post.user) %></p>
 <p>Posted <%= distance_of_time_in_words(@post.created_at, Time.now) %> ago</p>
+
+<% if @post.user == current_user %>
+  <%= link_to  "Edit this post", edit_post_path(@post) %>
+<% end %>
