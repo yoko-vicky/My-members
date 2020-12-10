@@ -1,7 +1,9 @@
 <article>
-  <h3><%= post.title %></h3>
+  <h3><%= link_to post.title, post_path(post) %></h3>
   <p><%= post.body %></p>
-  <p>Posted by @<%= post.user.username %></p>
-  <p>Posted <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</p>
 
+  <% if user_signed_in? %>
+  <p>Posted by @<%= post.user.username %></p>
+  <% end %>
+  <p>Posted <%= distance_of_time_in_words(post.created_at, Time.now) %> ago</p>
 </article>

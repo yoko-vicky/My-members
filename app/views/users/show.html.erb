@@ -1,0 +1,8 @@
+<h1><%= @user.username %></h1>
+
+<% if @user == current_user  %>
+<ul>
+  <li><%= link_to "Edit", edit_user_registration_path %></li>
+  <li><%= link_to "Delete Account", user_registration_path, method: :delete, data: { confirm: 'Are you sure to delete you account?' } %></li>
+</ul>
+<% end %>

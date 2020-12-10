@@ -1,0 +1,6 @@
+<h1>All Members</h1>
+<% if @users.any? %>
+  <%= render partial: "user", collection: @users %>
+<% else %>
+  <p>Not found</p>
+<% end %>
