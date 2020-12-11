@@ -33,7 +33,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 
 ## Live Demo
 
-[Live Demo Link](https://yocosaka.github.io)
+[Live Demo Link](https://my-members.herokuapp.com/)
 
 
 ## Getting Started
