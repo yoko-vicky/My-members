@@ -1,14 +1,14 @@
 <%= render "shared/errors", obj: @post %>
 <%= form_with(model: @post, local: true, class: 'form')  do |f| %>
-  <div class="field">
-    <%= f.label :title, "Title" %> <br>
-    <%= f.text_field :title %>
+  <div class="field mb-3">
+    <%= f.label :title, "Title", { class: "form-label" } %> <br>
+    <%= f.text_field :title, { class: "form-control"} %>
   </div>
 
-  <div class="field">
-    <%= f.label :body, "Body" %> <br>
-    <%= f.text_area :body %>
+  <div class="field mb-3">
+    <%= f.label :body, "Body", { class: "form-label" } %> <br>
+    <%= f.text_area :body, { class: "form-control"} %>
   </div>
 
-  <%= f.submit %>
+  <%= f.submit class: "btn btn-primary" %>
 <% end %>
