@@ -27,7 +27,6 @@ gem 'jbuilder', '~> 2.7'
 # Add by myself
 gem 'devise'
 gem 'devise-bootstrap-views', '~> 1.0'
-gem "font-awesome-rails"
 gem 'gravatar_image_tag'
 
 # Reduces boot times through caching; required in config/boot.rb
@@ -60,3 +59,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+group :production do
+  gem 'pg'
+end

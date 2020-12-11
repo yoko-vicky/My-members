@@ -1,10 +1,11 @@
 # My members
-![Top Page Screenshot](./screenshot.jpg)
-
+![Top Page Screenshot](./screenshot.png)
 
 ## About the Project
 
-This project is based on ...
+This project is based on The [Odin Project: Authentication](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication). I built an exclusive clubhouse where the members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
+
+I created User and Post model, controllers, dabatase and views with mainly three useful gems such as devise gem, devise-bootstrap-views gem and gravatar_image_tag gem. Plus, I'm using Bootstrap to organize layouts and all other views.
 
 A list of commonly used resources that I find helpful is listed in the acknowledgments.
 
@@ -15,7 +16,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 * [Built With](#built-with)
 * [Live Demo](#live-demo)
 * [Getting Started](#getting-started)
-* [Authors](#authors)
+* [Author](#author)
 * [Contributing](#contributing)
 * [Show your support](#show-your-support)
 * [License](#license)
@@ -27,7 +28,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 * [Ruby](https://www.ruby-lang.org/en/)
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [SASS(SCSS)](https://sass-lang.com/)
-* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+* [Bootstrap4](https://www.mashrurhossain.com/blog/rails6bootstrap4)
 
 
 ## Live Demo
@@ -49,13 +50,7 @@ e.g. $ git clone https://github.com/yourUsername/yourProjectName
 7. Press Enter. Your local copy will be created. 
 
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+## Author
 
 👤 **Yoko Saka**
 
@@ -87,6 +82,6 @@ This project is [MIT](./LICENSE) licensed.
 
 
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+* [Odin Project: Authentication](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication)
+* [devise gem](https://github.com/heartcombo/devise#starting-with-rails)
+* [devise-bootstrap-views gem](https://github.com/hisea/devise-bootstrap-views)
