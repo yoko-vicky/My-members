@@ -1,1 +1,9 @@
-<h2><%= gravatar_image_tag(user.email.gsub('spam', 'mdeering'), size: 15, alt: user.username, class: "thumb" ) %><%= link_to  user.username, user_path(user) %></h2>
+<div class="col-3">
+  <div class="card">
+    <%= gravatar_image_tag(user.email.gsub('spam', 'mdeering'), size: 15, alt: user.username, class: "member-pic" ) %>
+    <div class="card-body">
+      <h5 class="card-title"><%= user.username %></h5>
+      <%= link_to  "See this member", user_path(user), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
