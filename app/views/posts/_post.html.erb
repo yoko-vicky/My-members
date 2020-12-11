@@ -1,0 +1,17 @@
+<div class="col-4">
+  <div class="card text-center">
+    <% if user_signed_in? %>
+      <div class="card-header">
+        Posted by <%= gravatar_image_tag(post.user.email.gsub('spam', 'mdeering'), size: 15, alt: post.user.username, class: "thumb" ) %> <%= link_to  post.user.username, user_path(post.user) %>
+      </div>
+    <% end %>
+    <div class="card-body">
+      <h5 class="card-title"><%= post.title %></h5>
+      <p class="card-text"><%= post.body %></p>
+      <%= link_to "See this post", post_path(post), class:"btn btn-primary" %>
+    </div>
+    <div class="card-footer text-muted">
+      Posted <%= distance_of_time_in_words(post.created_at, Time.now) %> ago
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<h1>All the posts</h1>
+<% if @posts.any? %>
+<div class="container">
+  <div class="row">
+    <%= render partial: "post", collection: @posts %>
+  </div>
+</div>
+<% else %>
+  <p>Not found</p>
+<% end %>
+
+<% if user_signed_in? %>
+  <%= link_to  "Create a new post", new_post_path, class: "btn btn-dark btn-lg" %>
+<% end %>
