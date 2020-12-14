@@ -1,16 +1,17 @@
-<h1><%= @user.username %></h1>
-<%= gravatar_image_tag(@user.email.gsub('spam', 'mdeering'), size: 200, alt: @user.username, class: "pic" ) %>
+<div class="container-fluid text-center my-5">
+  <h1><%= @user.username %></h1>
+  <%= gravatar_image_tag(@user.email.gsub('spam', 'mdeering'), size: 200, alt: @user.username, class: "pic" ) %>
 
-<% if @user == current_user  %>
-<div class="">
-  <%= link_to  "Edit account", edit_user_registration_path, class: "btn btn-primary" %>
-  <%= link_to "Delete Account", user_registration_path, method: :delete, data: { confirm: 'Are you sure to delete you account?' }, class: "btn btn-danger" %>
+  <% if @user == current_user  %>
+  <div class="">
+    <%= link_to  "Edit account", edit_user_registration_path, class: "btn btn-primary" %>
+    <%= link_to "Delete Account", user_registration_path, method: :delete, data: { confirm: 'Are you sure to delete you account?' }, class: "btn btn-danger" %>
+  </div>
+  <% end %>
 </div>
-<% end %>
-
 
 <% if @user.posts.any? %>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <%= render partial: "posts/post", collection: @user.posts %>
     </div>
