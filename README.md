@@ -28,7 +28,7 @@ A list of commonly used resources that I find helpful is listed in the acknowled
 * [Ruby](https://www.ruby-lang.org/en/)
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [SASS(SCSS)](https://sass-lang.com/)
-* [Bootstrap4](https://www.mashrurhossain.com/blog/rails6bootstrap4)
+* [Bootstrap4](https://getbootstrap.com/)
 
 
 ## Live Demo
